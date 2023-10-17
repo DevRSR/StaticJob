@@ -1,0 +1,226 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  height: 100vh;
+  background: hsl(180, 52%, 96%);
+  padding-bottom: 15px;
+}
+a {
+  text-decoration: none;
+}
+.header {
+  position: relative;
+  width: 100%;
+  height: 120px;
+  background-image: url('./images/bg-header-desktop.svg');
+  background-color: hsl(180, 29%, 50%);
+  background-size: 100% 120px;
+}
+.search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  background: hsl(180, 31%, 95%);
+  width: 80%;
+  top: 90px;
+  left: 90px;
+  padding: 25px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 4px rgba(0,0,0,.2);
+}
+.search .div {
+  flex-wrap: wrap;
+  flex-basis: 60%;
+  display: flex;
+  justify-content: space-between;
+}
+.div p {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 5px;
+  background: rgba(0,80,0,.07);
+  color: hsl(180, 29%, 50%);
+  font-weight: bold;
+  border-radius: 3px;
+}
+p a {
+  font-weight: bold;
+  color: hsl(180, 29%, 50%);
+}
+.div p a {
+  margin-left: 15px;
+  padding: 5px 10px;
+  background: hsl(180, 29%, 50%);
+  color: #fff;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+.div p a:hover{
+  background: #000;
+}
+.cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background: hsl(180, 52%, 96%);
+  padding: 100px 10px;
+}
+.card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  width: 85%;
+  padding: 20px 15px;
+  border-radius: 5px;
+  margin-bottom: 50px;
+  box-shadow: 5px 5px 4px rgba(0,0,0,.2);
+}
+.first-div {
+  flex-basis: 50%;
+  display: flex;
+  align-items: center;
+}
+.card img {
+  width: 70px;
+}
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 60%;
+  margin-left: 15px;
+}
+.role {
+  font-weight: bold;
+  margin: 5px 0;
+}
+.role:hover {
+  color: hsl(180, 29%, 50%);
+}
+.aboutI,.aboutII {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+}
+.aboutII p {
+  color: hsl(180, 8%, 52%);
+}
+.new {
+  padding: 0 10px;
+  font-weight: bold;
+  color: #fff;
+  background: hsl(180, 29%, 50%);
+  border: 0;
+  border-radius: 25px;
+  text-transform: uppercase;
+}
+.feature {
+  padding: 0 10px;
+  font-weight: bold;
+  color: #fff;
+  background: hsl(180, 14%, 20%);
+  border: 0;
+  border-radius: 25px;
+  text-transform: uppercase;
+}
+.props {
+  flex-basis: 35%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.props a {
+  text-decoration: none;
+  margin-right: 4px;
+  font-weight: bold;
+  padding: 8px;
+  background: rgba(0,0,0,.05);
+  color: hsl(180, 29%, 50%);
+  border-radius: 5px;
+}
+.props a:hover{
+  background: hsl(180, 29%, 50%);
+  color: #fff;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center; 
+}
+.attribution a { 
+  color: hsl(228, 45%, 44%); 
+}
+.hide {
+  display: none;
+}
+
+@media(max-width:500px) {
+  .container {
+    height: 100%;
+  }
+  .header {
+    height: 150px;
+    background-image: url('./images/bg-header-mobile.svg');
+    background-size: 100% 150px;
+  }
+  .search {
+    top: 110px;
+    left: 15px;
+    padding: 15px;
+    width: 90%;
+  }
+  .search .div {
+    flex: 1;
+    margin-right: 20px;
+  }
+  .search .div p {
+    margin-bottom: 10px;
+  }
+  .card:first-child {
+    margin-top: 120px;
+  }
+  .card {
+    flex-direction: column;
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 100px;
+  }
+  .card img {
+    margin-top: -45px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+  }
+  .first-div {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+  }
+  .about {
+    width: 90%;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #f4f4f4;
+    margin-bottom: 15px;
+  }
+  .aboutI {
+    margin-bottom: 5px;
+  }
+  .aboutII {
+    margin-top: 5px;
+  }
+  .props {
+    flex-wrap: wrap;
+    width: 90%;
+  }
+  .props a {
+    margin: 5px 4px 15px;
+  }
+}
